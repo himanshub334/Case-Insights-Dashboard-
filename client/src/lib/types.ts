@@ -1,0 +1,2 @@
+export type CaseRecord = { id: string; case_type: string; status: string; priority: string; owner: string; created_at: string; resolution_hours: number | null; satisfaction: number | null; amount: number | null };
+export type Summary = { total: number; open: number; resolved: number; avgResolutionHours: number; avgSatisfaction: number; byMonth: { month: string; opened: number; resolved: number }[]; byType: { name: string; value: number }[]; byStatus: { name: string; value: number }[]; byPriority: { name: string; value: number }[] };
